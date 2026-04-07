@@ -1,16 +1,16 @@
 <h1 align="center"><b>🚩 ᴊᴀɪ ꜱʜʀɪ ʀᴀᴍ 🚩</b></h1>
 
 <p align="center">
-  <img src="https://github.com/DreamXBotz/Pics/blob/main/dreamxbotz.jpg" alt="DreamxBotz Logo">
+  <img src="https://github.com/YADUVANSHIXD/Pics/blob/main/dreamxbotz.jpg" alt="DreamxBotz Logo">
 </p>
 
-<h1 align="center">𝓓𝓻𝓮𝓪𝓶𝔁𝓑𝓸𝓽𝔃</h1>
+<h1 align="center">𝒩ℴ𝓋𝒶𝔁𝓑𝓸𝓽𝔃</h1>
 
 ---
 
 ## 👤 Owner
 
-[![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/Deendayal_Support_Group)
+[![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/NovasupportX)
 
 ---
 
@@ -49,7 +49,7 @@ Try the live bot here:
 
 Join our support group for assistance:
 
-[![Join Support Group](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white)](https://t.me/Deendayal_Support_Group)
+[![Join Support Group](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white)](https://t.me/NovasupportX)
 
 ---
 
@@ -92,7 +92,7 @@ Join our support group for assistance:
 - ✅ Auto Delete Old Files  
 - ✅ …and more!
 
-📌 *To stay updated with all new features, join our [Updates Channel](https://t.me/dreamxbotz).*
+📌 *To stay updated with all new features, join our [Updates Channel](https://t.me/Novaxbotz).*
 
 ---
 
