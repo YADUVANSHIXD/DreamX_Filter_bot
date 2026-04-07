@@ -65,11 +65,11 @@ QR_CODE = environ.get('QR_CODE', 'https://i.rj1.dev/SlOXa.jpg')    # QR code ima
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
-    10⭐: "7day",
-    20⭐: "15day",    
-    40⭐: "1month", 
-    55⭐: "45day",
-    75⭐: "60day",
+    10 : "7day",
+    20 : "15day",    
+    40 : "1month", 
+    55 : "45day",
+    75 : "60day",
 }  # Premium plans with their respective durations in days
 
 # ============================
