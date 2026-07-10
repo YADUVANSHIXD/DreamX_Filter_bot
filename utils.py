@@ -526,16 +526,19 @@ async def get_shortlink(link, grp_id, is_second_shortener=False, is_third_shorte
     return link
 
 async def get_settings(group_id):
+    group_id = int(group_id)
     settings = temp.SETTINGS.get(group_id)
     if not settings:
         settings = await db.get_settings(group_id)
-        temp.SETTINGS.update({group_id: settings})
+        temp.SETTINGS[group_id] = settings.copy()
     return settings
     
 async def save_group_settings(group_id, key, value):
+    group_id = int(group_id)
     current = await get_settings(group_id)
+    current = current.copy()
     current.update({key: value})
-    temp.SETTINGS.update({group_id: current})
+    temp.SETTINGS[group_id] = current
     await db.update_settings(group_id, current)
 
 def clean_filename(file_name):
@@ -1021,7 +1024,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                             f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n"
                             f"⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n"
                             f"📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {query.from_user.mention}\n"
-                            f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :⚡ {query.message.chat.title or temp.B_LINK or 'ɴᴏᴠᴀxʙᴏᴛᴢ'}\n</b>"
+                            f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :⚡ {query.message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'}\n</b>"
                         )
                     else:
                         cap = (
@@ -1029,7 +1032,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                             f"🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n"
                             f"⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n"
                             f"📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {query.from_user.mention}\n"
-                            f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :⚡ {query.message.chat.title or temp.B_LINK or 'ɴᴏᴠᴀxʙᴏᴛᴢ'}\n</b>"
+                            f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :⚡ {query.message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'}\n</b>"
                         )
                     cap += "\n\n<u>Your Requested Files Are Here</u> \n\n</b>"
                     for idx, file in enumerate(files, start=offset + 1):
@@ -1047,7 +1050,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                 cap = (
                     f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n"
                     f"⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n"
-                    f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {query.message.chat.title or temp.B_LINK or 'ɴᴏᴠᴀxʙᴏᴛᴢ'}\n</b>"
+                    f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {query.message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'}\n</b>"
                 )
             else:
                 cap = (
@@ -1055,7 +1058,7 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
                     f"🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n"
                     f"⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n"
                     f"📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {query.from_user.mention}\n"
-                    f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {query.message.chat.title or temp.B_LINK or 'ɴᴏᴠᴀxʙᴏᴛᴢ'}\n</b>"
+                    f"⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {query.message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'}\n</b>"
                 )
 
             cap += "\n\n<u>Your Requested Files Are Here</u>\n\n</b>"
