@@ -22,7 +22,7 @@
 
 Try the live bot here:
 
-[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white)](https://t.me/Princess_V4_bot)
+[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white)](https://t.me/Botfather)
 
 ---
 
@@ -99,11 +99,12 @@ Join our support group for assistance:
 ## ⚙️ Commands
 
 ```bash
+start                – Start the bot
 movie_update        – Toggle movie update notifications
 pm_search           – Toggle private message search
-verification        – View total verified users
+verification         – View total verified users
 top                 – Search top trending items
-start               – Start the bot
+details             – Check Group Details 
 settings            – Modify bot settings
 plan                – View available premium plans
 myplan              – Check your active plan
@@ -125,6 +126,12 @@ unban               – Unban user
 add_premium         – Add premium access
 remove_premium      – Remove premium access
 premium_users       – List premium users
+set_shortner         – To set shortner 
+set_shortner_2       – To set Shortner for 2nd verify 
+set_shortner_3       – To set Shortner for 3rd verify 
+set_tutorial         – To set Tutorial 
+set_tutorial_2       – To set 2nd Tutorial 
+set_tutorial_3       – To set 3rd Tutorial 
 restart             – Restart the bot
 ```
 
